@@ -7,6 +7,8 @@
 - ERPNext installed  v15.46.2 (version-15)
 
 ##Installation <br>
+<b>Email Account should be configured, and a default sending option should also be set.</b>
+
 cd ~/frappe-bench <br>
 bench get-app item_notification https://github.com/shubhamg9074/Erpnext-Email.git <br>
 bench --site your-site-name install-app item_notification <br>
