@@ -26,20 +26,20 @@ def send_item_email(item_code):
     message = frappe.render_template("templates/emails/item_invoice_email.html", context)
 
     # Attach PDFs of invoices
-    attachments = []
-    for inv in invoices:
-        pdf = frappe.get_print("Sales Invoice", inv.name, print_format="Standard", as_pdf=True)
-        attachments.append({
-            "fname": f"{inv.name}.pdf",
-            "fcontent": pdf
-        })
+    # attachments = []
+    # for inv in invoices:
+    #     pdf = frappe.get_print("Sales Invoice", inv.name, print_format="Standard", as_pdf=True)
+    #     attachments.append({
+    #         "fname": f"{inv.name}.pdf",
+    #         "fcontent": pdf
+    #     })
 
     # Send email
     frappe.sendmail(
         recipients=["shubhamg9074@gmail.com"],   # put your email here
         subject=f"Latest 5 Sales Invoices for Item {item_code}",
         message=message,
-        attachments=attachments
+        # attachments=attachments
     )
 
     return "Email sent successfully"

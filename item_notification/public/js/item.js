@@ -7,6 +7,8 @@ frappe.ui.form.on("Item", {
                     args: {
                         item_code: frm.doc.name
                     },
+                    freeze:'True',
+                    freeze_message : "Email Sending",
                     callback: function(r) {
                         if (!r.exc) {
                             frappe.msgprint("Email sent successfully!");
