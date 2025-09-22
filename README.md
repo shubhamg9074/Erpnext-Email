@@ -13,3 +13,12 @@ cd ~/frappe-bench <br>
 bench get-app item_notification https://github.com/shubhamg9074/Erpnext-Email.git <br>
 bench --site your-site-name install-app item_notification <br>
 
+<br>
+<br>
+<b>## Process</b>
+<br>
+Go to Item List and Create one Item <br>
+Now Go to Sales Invoice List and Create Sales Invoice  With that Item <br><br><br>
+
+Now Go to Item list and Click on Actions Button and Send Mail <br>
+Check the Email in the Email Queue list.
