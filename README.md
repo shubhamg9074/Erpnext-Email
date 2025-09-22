@@ -6,8 +6,8 @@
 - Frappe Framework: v15.50.1 (version-15)
 - ERPNext installed  v15.46.2 (version-15)
 
-##Installation /n
-cd ~/frappe-bench /n
-bench get-app item_notification https://github.com/shubhamg9074/Erpnext-Email.git
-bench --site your-site-name install-app item_notification
+##Installation <br>
+cd ~/frappe-bench <br>
+bench get-app item_notification https://github.com/shubhamg9074/Erpnext-Email.git <br>
+bench --site your-site-name install-app item_notification <br>
 
