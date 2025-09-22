@@ -1,0 +1,14 @@
+<p>Hello,</p>
+
+<p>Here are the latest 5 Sales Invoices for Item <b>{{ item_code }}</b>:</p>
+
+<ul>
+    {% for inv in invoices %}
+        <li>
+            <b>{{ inv.name }}</b> - {{ inv.posting_date }}
+            (<a href="{{ frappe.utils.get_url_to_form('Sales Invoice', inv.name) }}">Open</a>)
+        </li>
+    {% endfor %}
+</ul>
+
+<p>Regards,<br>Your ERPNext</p>
