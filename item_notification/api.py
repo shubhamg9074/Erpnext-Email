@@ -36,7 +36,7 @@ def send_item_email(item_code):
 
     # Send email
     frappe.sendmail(
-        recipients=["laxmivermahv1998@gmail.com"],   # put your email here
+        recipients=["shubhamg9074@gmail.com"],   # put your email here
         subject=f"Latest 5 Sales Invoices for Item {item_code}",
         message=message,
         attachments=attachments
